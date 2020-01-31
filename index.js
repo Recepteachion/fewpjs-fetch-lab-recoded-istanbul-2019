@@ -4,11 +4,11 @@ function fetchBooks() {
     .then(function(response){
         return response.json();
     })
-    .then(renderBook)
+    .then(renderBooks)
 };
 
 
-function renderBook(json) {
+function renderBooks(json) {
     
   const main = document.querySelector('main');
   json.forEach(book => {
